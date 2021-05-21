@@ -577,3 +577,10 @@ HES = {
 	color = rgb { 114  171  184 }
 	color_ui = rgb { 114  171  184 }
 }
+
+########
+
+IEA = {
+	color = rgb { 67  127  63 }
+	color_ui = rgb { 67  127  63 }
+}

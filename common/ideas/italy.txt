@@ -758,10 +758,10 @@ ideas = {
 			picture = ita_bloated_military_bureaucracy
 			
 			research_bonus = {
-				land_doctrine = -0.35
+				land_doctrine = -0.25
 			}
 			modifier = {
-				political_power_gain = 0.2
+				political_power_gain = 0.25
 				army_chief_cost_factor = -0.25
 				high_command_cost_factor = -0.25
 				army_org_factor = -0.05

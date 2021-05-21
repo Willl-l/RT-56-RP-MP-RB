@@ -1,5 +1,5 @@
 ﻿###########################
-# Italian Events By BlueFoxy
+# Italian Events By BlueFoxy (and added to by DoritoKing94)
 ###########################
 
 add_namespace = r56_italy
@@ -1042,3 +1042,5 @@ country_event = {
 		transfer_state = 102
 	}
 }
+
+################

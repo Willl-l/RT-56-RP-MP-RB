@@ -2730,3 +2730,18 @@
  XSM:0 "Qinghai"
  XSM_DEF:0 "Qinghai"
  XSM_ADJ:0 "Qinghai"
+
+ #############
+
+ #IEA
+ IEA_fascism:0 "Italian East Africa"
+ IEA_fascism_DEF:0 "Italian East Africa"
+ IEA_democratic:0 "Italian East Africa"
+ IEA_democratic_DEF:0 "Italian East Africa"
+ IEA_neutrality:0 "Italian East Africa"
+ IEA_neutrality_DEF:0 "Italian East Africa"
+ IEA_communism:0 "Italian East Africa"
+ IEA_communism_DEF:0 "Italian East Africa"
+ IEA:0 "Italian East Africans"
+ IEA_DEF:0 "Italian East Africans"
+ IEA_ADJ:0 "Italian East Africans"
