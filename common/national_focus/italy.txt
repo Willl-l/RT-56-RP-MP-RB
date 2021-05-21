@@ -1304,14 +1304,14 @@ focus_tree = {
 	focus = {
 		id = ITA_the_africa_question
 		icon = GFX_goal_generic_position_armies
-		cost = 5
+		cost = 2
 		prerequisite = {
 			focus = ITA_colonial_investments
 		}
 		x = 16
 		y = 1
 		ai_will_do = {
-			factor = 25
+			factor = 90
 		}
 		available = {
 			OR = {
@@ -1324,7 +1324,26 @@ focus_tree = {
 			}			
 		}
 		completion_reward = {
-		
+			IEA = {
+				transfer_state = 271
+				transfer_state = 550
+				transfer_state = 559
+			}
+			550 = {
+				add_core_of = IEA			
+			}
+			271 = {
+				add_core_of = IEA			
+			}
+			559 = {
+				add_core_of = IEA			
+			}
+
+			set_autonomy = {
+				target = IEA
+				autonomous_state = autonomy_colony
+				freedom_level = 0.2
+			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION }
 	}
