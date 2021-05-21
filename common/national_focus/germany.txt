@@ -6194,9 +6194,8 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_military_industrial_complex
 		}
-		relative_position_id = GER_military_industrial_complex
-		x = -1
-		y = 1
+		x = 66
+		y = 4
 			ai_will_do = {
 					factor = 10
 				}
@@ -6266,9 +6265,8 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_military_industrial_complex
 		}
-		relative_position_id = GER_military_industrial_complex
-		x = 1
-		y = 1
+		x = 64
+		y = 4
 		ai_will_do = {
 			factor = 10
 		}
@@ -6288,19 +6286,37 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_military_industrial_complex
 		}
-		relative_position_id = GER_military_industrial_complex
-		x = 0
-		y = 2
+		x = 70
+		y = 4
 		available = {
 			num_of_factories > 99
 		}
 			ai_will_do = {
-					factor = 50
+					factor = 40
 				}
 			completion_reward = {
 					add_research_slot = 1
 				}
 				search_filters = { FOCUS_FILTER_RESEARCH }
+
+	}
+	focus = {
+		id = GER_get_speer
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 2
+		prerequisite = {
+			focus = GER_military_industrial_complex
+		}
+		x = 68
+		y = 4
+		available = {
+			date > 1942.1.1
+			num_of_factories > 149
+		}
+			ai_will_do = {
+					factor = 40
+				}
+				search_filters = { FOCUS_FILTER_INDUSTRY }
 
 	}
 	focus = {

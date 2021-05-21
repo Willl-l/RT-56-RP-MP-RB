@@ -127,6 +127,8 @@ GER_deutsche_forschungsanstalt_fur_segelflug_desc:0 "Deutsche Forschungsanstalt 
  GER_denounce_versailles_desc:0 "An official denunciation of the Versailles treaty will clearly show our political position to the world and will drum up support for our cause in the civilian population."
  GER_military_industrial_complex:0 "Expand the Military Industries"
  GER_military_industrial_complex_desc:0 "Using a contractor-based military industry along with large amounts of government funding will expand our industrial complex to a new level."
+ GER_get_speer:0 "Albert Speer"
+ GER_get_speer_desc:0 "Albert Speer is a rising memebr of the NSDAP and the primary architect within the party, we believe that he could be greatly benificial to the Germany war effort within the organisation of our armaments."
  GER_restore_weimar:0 "Move to Restore the Weimar Government"
  GER_restore_weimar_desc:0 "The democratic system of the Weimar Government was the best way to manage the German state; Hitler's rise to power interfered with the peaceful path of Germany. We should revert the damage Hitler has done before it's too late."
  GER_establish_bundesrepublik:0 "Establish the Bundesrepublik"
