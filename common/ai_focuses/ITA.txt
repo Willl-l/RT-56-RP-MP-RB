@@ -1,5 +1,29 @@
 #####-----> Italian Research Priorities <><> <><> <><> <><> <><>
 
+ai_historical_focus_list_ITA = {
+	ai_national_focuses = {
+		ITA_leave_the_league_of_nations
+		ITA_the_stab_in_the_back
+		ITA_expand_the_iri_role
+		ITA_restructure_the_divisions
+		ITA_colonial_investments
+		ITA_the_africa_question
+		ITA_end_the_army_corruption
+		ITA_reshuffle_the_officer_corps
+		ITA_expand_hydroelectricity_production
+		ITA_increase_marble_exportations
+		ITA_regia_aeronautica_2
+		ITA_ba_65
+		ITA_g_50
+		ITA_increase_aircraft_production
+		ITA_move_toward_autarky
+		ITA_ultimatum_to_albania
+		ITA_nationalize_the_banking_sector
+		ITA_regia_marina_2
+		ITA_appoint_campioni
+	}
+}
+
 ai_focus_defense_ITA = {
 	research = {
 		defensive = 5.0

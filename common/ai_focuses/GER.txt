@@ -1,4 +1,28 @@
-#####---------------------------------------------------------------------> edited by Greatexperiment
+#####
+
+ai_historical_focus_list_GER = {
+	ai_national_focuses = {
+		GER_rhineland
+		GER_begin_depression_recovery
+		GER_appoint_ecconomic_positions
+		GER_volksemeinschaft
+		GER_support_autarks_I
+		GER_support_autarks_II
+		GER_autobahn
+		GER_privatize_reichsbahn
+		GER_finish_reinhardt
+		GER_anschluss
+		GER_steelworks_issues
+		GER_nationalize_resource_industries
+		GER_demand_memel
+		GER_political_sphere
+		GER_denounce_versailles
+		GER_anti_comitern_pact
+		GER_demand_sudetenland
+		GER_deutsche_arbeitsfront
+	}
+}
+
 
 ai_focus_defense_GER = {
 	research = {

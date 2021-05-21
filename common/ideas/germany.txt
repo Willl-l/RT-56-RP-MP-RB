@@ -210,6 +210,7 @@ ideas = {
 				production_speed_buildings_factor = -0.05
 				conscription = 0.01
 				war_support_factor = 0.05
+				local_resources_factor = 0.10
 			}
 		}
 		autark_support_II_idea = {
@@ -224,6 +225,7 @@ ideas = {
 				production_speed_arms_factory_factor = 0.05
 				conscription = 0.01
 				war_support_factor = 0.075
+				local_resources_factor = 0.15
 			}
 			research_bonus = {
 				synth_resources = 0.05

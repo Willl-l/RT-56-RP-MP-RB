@@ -871,7 +871,7 @@ focus_tree = {
 	focus = {
 		id = GER_support_autarks_II
 		icon = GFX_goal_generic_army_doctrines
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = GER_support_autarks_I
 		}
@@ -892,7 +892,7 @@ focus_tree = {
 	focus = {
 		id = GER_support_technocrats_II
 		icon = GFX_goal_generic_intelligence_exchange
-		cost = 5.00
+		cost = 5
 		prerequisite = {
 			focus = GER_support_technocrats_I
 		}
