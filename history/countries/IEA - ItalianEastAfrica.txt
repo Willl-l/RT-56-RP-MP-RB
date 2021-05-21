@@ -1,0 +1,28 @@
+capital = 271
+
+set_war_support = 0.90
+set_stability = 0.32
+set_research_slots = 3
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	fascism = 90
+	neutrality = 10
+}
+
+create_country_leader = {
+	name = "Prince Amedeo"
+	desc = ""
+	picture = "gfx/leaders/IEA/Portrait_Prince_Amedeo_East_Africa.dds"
+	expire = "1965.1.1"
+	ideology = nazism
+	traits = {
+		retired_officer
+	}
+}
