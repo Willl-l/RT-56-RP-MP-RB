@@ -145,8 +145,8 @@ CAN = {
 	color_ui = rgb { 155 62 51 }
 }
 CHI = {
-	color = hsv { 0.18 0.6 0.9 } #255 244 190
-	color_ui = hsv { 0.18 0.3 0.9 }
+	color = rgb { 55  159  196 } 
+	color_ui = rgb { 55  159  196 }
 }
 CHL = {
 	color = rgb { 155 101 107 }
@@ -331,8 +331,8 @@ SHX = {
 }
 
 XSM = {
-	color = rgb { 105 90 132 }
-	color_ui = rgb { 105 90 132 }
+	color = rgb { 214 195 99 }
+	color_ui = rgb { 214 195 99 }
 }
 
 LBA = {

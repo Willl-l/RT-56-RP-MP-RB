@@ -1,11 +1,9 @@
-version="1.10.5.0"
-picture="thumbnail.png"
+version="0.1"
 tags={
-	"Alternative History"
-	"Events"
+	"Balance"
+	"Fixes"
 	"Gameplay"
-	"National Focuses"
+	"Military"
 }
-name="Road to 56 RP"
+name="RT56 RP MP Rebalanced"
 supported_version="1.10.5"
-remote_file_id="1875414471"
