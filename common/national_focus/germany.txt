@@ -6027,9 +6027,12 @@ focus_tree = {
 	focus = {
 		id = GER_form_the_reichskommissariats
 		icon = GFX_focus_ger_reichskommisariats
-		cost = 500.00
+		cost = 5.0
 		prerequisite = {
 			focus =  GER_combine_SS_gestapo
+		}
+		mutually_exclusive = {
+			focus = GER_strengthen_german_state
 		}
 		x = 66
 		y = 3
@@ -6189,12 +6192,10 @@ focus_tree = {
 		icon = GFX_goal_GER_european_reich
 		cost = 10.00
 		prerequisite = {
-			#focus = GER_foreign_volunteers
+			focus = GER_strengthen_german_state
+			focus = GER_form_the_reichskommissariats
 		}
-		prerequisite = {
-			focus = GER_military_industrial_complex
-		}
-		x = 66
+		x = 65
 		y = 4
 			ai_will_do = {
 					factor = 10
@@ -6258,15 +6259,15 @@ focus_tree = {
 	focus = {
 		id = GER_strengthen_german_state
 		icon = GFX_goal_crush_resistance2
-		cost = 10.00
+		cost = 5.0
 		prerequisite = {
-			#focus = GER_foreign_volunteers
+			focus = GER_combine_SS_gestapo
 		}
-		prerequisite = {
-			focus = GER_military_industrial_complex
+		mutually_exclusive = {
+			focus = GER_form_the_reichskommissariats
 		}
 		x = 64
-		y = 4
+		y = 3
 		ai_will_do = {
 			factor = 10
 		}
@@ -6286,7 +6287,7 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_military_industrial_complex
 		}
-		x = 70
+		x = 69
 		y = 4
 		available = {
 			num_of_factories > 99
@@ -6307,7 +6308,7 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_military_industrial_complex
 		}
-		x = 68
+		x = 67	
 		y = 4
 		available = {
 			date > 1942.1.1
