@@ -1653,6 +1653,8 @@ ideas = {
 			modifier = {
 				max_planning = 0.25
 				planning_speed = -0.25
+				offence = -0.1
+				ai_focus_defense = 0.5
 			}
 		}
 
