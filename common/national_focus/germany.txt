@@ -52,9 +52,9 @@ focus_tree = {
 		text = GER_naval_rearmament
 		x = 13
 		y = 0
-		cost = 5
+		cost = 4
 		ai_will_do = {
-			factor = 16
+			factor = 1
 		}
 
 		available_if_capitulated = yes
@@ -6076,7 +6076,7 @@ focus_tree = {
 	focus = {
 		id = GER_military_industrial_complex
 		icon = GFX_goal_italy_autarky
-		cost = 10.00
+		cost = 8
 		prerequisite = {
 			focus = GER_combine_SS_gestapo
 		}

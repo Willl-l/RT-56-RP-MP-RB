@@ -332,7 +332,7 @@ focus_tree = {
 		x = 18
 		y = 0
 		ai_will_do = {
-			factor = 10
+			factor = 95
 		}
 		available = {
 			OR = {

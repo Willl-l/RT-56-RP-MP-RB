@@ -208,10 +208,6 @@
  r56_italy.103.b:0 "They bound together like sheep scared of a wolf."
  r56_italy.103.c:0 "Let's hope they can work together for good."
 
- ##########
-
- "Following the Victory in the Ethiopian War, it has come into question to find a solution to the colonies of the Empire; our advisors have recommended we set up a colony state lead by Prince Amedeo or we could just keep all gained territories as an integrated part of our Empire and further assimilate them. What is your choice Il Duce?"
-
  # Ideas
  ITA_lack_of_powered_planes:0 "Lack of Powerful Motors"
  ITA_lack_of_powered_planes_desc:0 "One of the main weaknesses of the Italian Air Force is the lack of horsepower in the aircraft produced, leaving a stain on the rest of the plane's equipment.\nA major modernisation of our engine production capacities is necessary to solve this problem, which makes our aircraft less efficient in terms of speed, something very damaging in an era where aircraft are only going faster every year."
@@ -445,8 +441,6 @@
  ITA_prepare_the_economy_for_war_desc:0 "We are far behind the other nations of Europe in terms of military production, due to our already rather weak industrialization and only concentrated from the north. Major economic efforts will have to be made to achieve a sufficient level of production to properly supply the army."
  ITA_colonial_investments:0 "Colonial Investments"
  ITA_colonial_investments_desc:0 "Our colonies represent a great economic opportunity, from oil-filled soils in Libya to the iron and gold reserve in Eritrea, we should seek to increase our colonial investments."
- ITA_the_africa_question:0 "The African Question"
- ITA_the_africa_question_desc:0 "Following the Victory in the Ethiopian War, it has come into question to find a solution for the colonies of the Empire; our advisors have recommended we set up a colony state lead by Prince Amedeo which could greatly benefit us in both the future formation of an Italian East African Navy as well as protecting our colonies abroad."
  ITA_bring_industry_to_the_mezzogiorno:0 "Bring Industry To The Mezzogiorno "
  ITA_bring_industry_to_the_mezzogiorno_desc:0 "The Mezzogiorno, the southern region of Italy, has always been behind in terms of industrialization, most of its inhabitants being farmers. It is time to bring the south to a level equal to the north in terms of industry."
  ITA_expand_libyan_oil_production:0 "Petrolibya Society"
@@ -574,6 +568,8 @@
  ITA_a_way_out:0 "A Way Out"
  ITA_second_risorgimento:0 "Second Risorgimento"
  ITA_second_risorgimento_desc:0 "The dream of a unified Italy is once against within our grasp. Fratelli d'Italia, l'Italia s'è desta!"
+ ITA_the_africa_question:0 "The African Question"
+ ITA_the_africa_question_desc:0 "Following the Victory in the Ethiopian War, it has come into question to find a solution for the colonies of the Empire; our advisors have recommended we set up a colony state lead by Prince Amedeo which could greatly benefit us in both the future formation of an Italian East African Navy as well as protecting our colonies abroad."
 
 
 #Leaders
