@@ -4,8 +4,8 @@ ai_historical_focus_list_GER = {
 	ai_national_focuses = {
 		GER_rhineland
 		GER_begin_depression_recovery
-		GER_appoint_ecconomic_positions
-		GER_volksemeinschaft
+		GER_appoint_economic_positions
+		GER_volksgemeinschaft
 		GER_support_autarks_I
 		GER_support_autarks_II
 		GER_autobahn
