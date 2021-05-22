@@ -1210,134 +1210,11 @@ focus = {
 	}
 	
 	focus = {
-		id = HON_take_elsalvador
-		icon = GFX_goal_strike_elsalvador
-		available = {
-			r56_script_i_am_sane = yes
-			ELS = {
-				r56_script_target_is_sane = yes
-			}
-			is_puppet = no
-		}
-		prerequisite = { focus = HON_corporate_consolidation }
-		relative_position_id = HON_corporate_consolidation
-		x = -2
-		y = 1
-		cost = 5
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 2
-				strength_ratio = { tag = ELS ratio > 1.5 }
-			}
-			modifier = {
-				factor = 0.1
-				has_war = yes
-			}
-		}
-		
-		bypass = {
-			ELS = {
-				r56_script_standard_bypass = yes
-			}
-		}
-		
-		completion_reward = {
-		ELS = {clr_country_flag = monroe_doctrine
-			if = { limit = { has_idea = american_protection_defence_democratic}
-				remove_ideas = american_protection_defence_democratic 
-				}
-			if = { limit = { has_idea = american_protection_drift_democratic}
-				remove_ideas = american_protection_drift_democratic
-				}
-			if = { limit = { has_idea = american_protection_defence_communism}
-				remove_ideas = american_protection_defence_communism
-				}
-			if = { limit = { has_idea = american_protection_drift_communism}
-				remove_ideas = american_protection_drift_communism
-				}
-			if = { limit = { has_idea = american_protection_defence_fascism}
-				remove_ideas = american_protection_defence_fascism
-				}
-			if = { limit = { has_idea = american_protection_drift_fascism}
-				remove_ideas = american_protection_drift_fascism
-				}
-			if = { limit = { has_idea = american_protection_drift_fascism}
-				remove_ideas = american_protection_drift_fascism
-				} }
-		USA = {
-				diplomatic_relation = { country = ELS relation = guarantee active = no }
-				}
-		ELS = { country_event = { id = hon.4 } }
-		}
-	}
-	focus = {
-		id = HON_take_nicaragua
-		icon = GFX_goal_strike_nicaragua
-		prerequisite = { focus = HON_corporate_consolidation }
-		relative_position_id = HON_corporate_consolidation
-		x = 0
-		y = 1
-		cost = 5
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 2
-				strength_ratio = { tag = NIC ratio > 1.5 }
-			}
-			modifier = {
-				factor = 0.1
-				has_war = yes
-			}
-		}
-		
-		available = {
-			r56_script_i_am_sane = yes
-			NIC = {
-				r56_script_target_is_sane = yes
-			}
-			is_puppet = no
-		}
-		
-		bypass = {
-			NIC = {
-				r56_script_standard_bypass = yes
-			}
-		}
-		
-		completion_reward = {
-		NIC = {clr_country_flag = monroe_doctrine
-			if = { limit = { has_idea = american_protection_defence_democratic}
-				remove_ideas = american_protection_defence_democratic 
-				}
-			if = { limit = { has_idea = american_protection_drift_democratic}
-				remove_ideas = american_protection_drift_democratic
-				}
-			if = { limit = { has_idea = american_protection_defence_communism}
-				remove_ideas = american_protection_defence_communism
-				}
-			if = { limit = { has_idea = american_protection_drift_communism}
-				remove_ideas = american_protection_drift_communism
-				}
-			if = { limit = { has_idea = american_protection_defence_fascism}
-				remove_ideas = american_protection_defence_fascism
-				}
-			if = { limit = { has_idea = american_protection_drift_fascism}
-				remove_ideas = american_protection_drift_fascism
-				}
-			if = { limit = { has_idea = american_protection_drift_fascism}
-				remove_ideas = american_protection_drift_fascism
-				} }
-		NIC = { country_event = { id = hon.7 } }
-		}
-	}
-
-	focus = {
-		id = HON_take_guatemala
+		id = HON_pressure_eng
 		icon = GFX_goal_generic_territory_or_war
 		
-		relative_position_id = HON_take_nicaragua
-		prerequisite = { focus = HON_take_nicaragua }
+		relative_position_id = HON_corporate_consolidation
+		prerequisite = { focus = HON_corporate_consolidation }
 		x = 0
 		y = 1
 		cost = 5
@@ -1355,50 +1232,33 @@ focus = {
 		
 		available = {
 			r56_script_i_am_sane = yes
-			GUA = {
+			ENG = {
 				r56_script_target_is_sane = yes
 			}
 			is_puppet = no
 		}
 		
 		bypass = {
-			GUA = {
+			ENG = {
 				r56_script_standard_bypass = yes
 			}
 		}
 		
 		completion_reward = {
-		GUA = {clr_country_flag = monroe_doctrine
-			if = { limit = { has_idea = american_protection_defence_democratic}
-				remove_ideas = american_protection_defence_democratic 
+		ENG = {
+				add_opinion_modifier = {
+					target = HON
+					modifier = huge_increase
 				}
-			if = { limit = { has_idea = american_protection_drift_democratic}
-				remove_ideas = american_protection_drift_democratic
-				}
-			if = { limit = { has_idea = american_protection_defence_communism}
-				remove_ideas = american_protection_defence_communism
-				}
-			if = { limit = { has_idea = american_protection_drift_communism}
-				remove_ideas = american_protection_drift_communism
-				}
-			if = { limit = { has_idea = american_protection_defence_fascism}
-				remove_ideas = american_protection_defence_fascism
-				}
-			if = { limit = { has_idea = american_protection_drift_fascism}
-				remove_ideas = american_protection_drift_fascism
-				}
-			if = { limit = { has_idea = american_protection_drift_fascism}
-				remove_ideas = american_protection_drift_fascism
-				} }
-		GUA = { country_event = { id = hon.1 } }
+			}
 		}
 	}
 
 	focus = {
-		id = HON_take_costa_rica
+		id = HON_pressure_usa
 		icon = GFX_goal_generic_occupy_states_ongoing_war
-		prerequisite = { focus = HON_take_guatemala }
-		relative_position_id = HON_take_guatemala
+		prerequisite = { focus = HON_pressure_eng }
+		relative_position_id = HON_pressure_eng
 		x = 0
 		y = 1
 		cost = 5
@@ -1416,42 +1276,25 @@ focus = {
 		
 		available = {
 			r56_script_i_am_sane = yes
-			COS = {
+			USA = {
 				r56_script_target_is_sane = yes
 			}
 			is_puppet = no
 		}
 		
 		bypass = {
-			COS = {
+			USA = {
 				r56_script_standard_bypass = yes
 			}
 		}
 		
 		completion_reward = {
-		COS = {clr_country_flag = monroe_doctrine
-			if = { limit = { has_idea = american_protection_defence_democratic}
-				remove_ideas = american_protection_defence_democratic 
+		USA = {
+				add_opinion_modifier = {
+					target = HON
+					modifier = huge_increase
 				}
-			if = { limit = { has_idea = american_protection_drift_democratic}
-				remove_ideas = american_protection_drift_democratic
-				}
-			if = { limit = { has_idea = american_protection_defence_communism}
-				remove_ideas = american_protection_defence_communism
-				}
-			if = { limit = { has_idea = american_protection_drift_communism}
-				remove_ideas = american_protection_drift_communism
-				}
-			if = { limit = { has_idea = american_protection_defence_fascism}
-				remove_ideas = american_protection_defence_fascism
-				}
-			if = { limit = { has_idea = american_protection_drift_fascism}
-				remove_ideas = american_protection_drift_fascism
-				}
-			if = { limit = { has_idea = american_protection_drift_fascism}
-				remove_ideas = american_protection_drift_fascism
-				} }
-		COS = { country_event = { id = hon.10 } }
+			}
 		}
 	}
 	
@@ -1480,8 +1323,8 @@ focus = {
 				has_equipment = { convoy > 99 }
 			}
 		}
-		prerequisite = { focus = HON_take_guatemala }
-		relative_position_id = HON_take_guatemala
+		prerequisite = { focus = HON_pressure_eng }
+		relative_position_id = HON_pressure_eng
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -1523,8 +1366,8 @@ focus = {
 			controls_state = 316
 			
 		}
-		prerequisite = { focus = HON_take_costa_rica }
-		relative_position_id = HON_take_costa_rica
+		prerequisite = { focus = HON_pressure_usa }
+		relative_position_id = HON_pressure_usa
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -1594,8 +1437,8 @@ focus = {
 			}
 			 has_equipment = { convoy > 100 }
 		}
-		prerequisite = { focus = HON_take_costa_rica }
-		relative_position_id = HON_take_costa_rica
+		prerequisite = { focus = HON_pressure_usa }
+		relative_position_id = HON_pressure_usa
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -2478,277 +2321,10 @@ focus = {
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
 		}
 	focus = {
-		id = HON_liberate_guatemala
-		icon = GFX_goal_communist_brigades
-		prerequisite = { focus = HON_liberate_central}
-		x = 10
-		y = 6
-		cost = 5
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 2
-				strength_ratio = { tag = GUA ratio > 1.5 }
-			}
-			modifier = {
-				factor = .1
-				has_war = yes
-			}
-		}
-		
-		available = {
-			r56_script_i_am_sane = yes
-			GUA = {
-				r56_script_target_is_sane = yes
-			}
-		}
-		
-		bypass = {
-			GUA = {
-				r56_script_standard_bypass = yes
-			}
-		}
-		
-		completion_reward = {
-		GUA = {clr_country_flag = monroe_doctrine
-			if = { limit = { has_idea = american_protection_defence_democratic}
-				remove_ideas = american_protection_defence_democratic 
-				}
-			if = { limit = { has_idea = american_protection_drift_democratic}
-				remove_ideas = american_protection_drift_democratic
-				}
-			if = { limit = { has_idea = american_protection_defence_communism}
-				remove_ideas = american_protection_defence_communism
-				}
-			if = { limit = { has_idea = american_protection_drift_communism}
-				remove_ideas = american_protection_drift_communism
-				}
-			if = { limit = { has_idea = american_protection_defence_fascism}
-				remove_ideas = american_protection_defence_fascism
-				}
-			if = { limit = { has_idea = american_protection_drift_fascism}
-				remove_ideas = american_protection_drift_fascism
-				}
-			if = { limit = { has_idea = american_protection_drift_fascism}
-				remove_ideas = american_protection_drift_fascism
-				} 
-		}
-		USA = {
-				diplomatic_relation = { country = GUA relation = guarantee active = no }
-				}
-		313 = { add_core_of = HON }
-		declare_war_on = {
-			target = GUA
-			type = take_core_state
-			generator = { 313 }
-			}
-		}
-		search_filters = { FOCUS_FILTER_ANNEXATION }
-	}
-	focus = {
-		id = HON_liberate_salvador
-		icon = GFX_goal_strike_elsalvador
-		prerequisite = { focus = HON_liberate_central}
-		x = 12
-		y = 6
-		cost = 5
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 2
-				strength_ratio = { tag = ELS ratio > 1.5 }
-			}
-			modifier = {
-				factor = .1
-				has_war = yes
-			}
-		}
-		available = {
-			r56_script_i_am_sane = yes
-			ELS = {
-				r56_script_target_is_sane = yes
-			}
-		}
-		
-		bypass = {
-			ELS = {
-				r56_script_standard_bypass = yes
-			}
-		}
-		completion_reward = {
-		ELS = {clr_country_flag = monroe_doctrine
-			if = { limit = { has_idea = american_protection_defence_democratic}
-				remove_ideas = american_protection_defence_democratic 
-				}
-			if = { limit = { has_idea = american_protection_drift_democratic}
-				remove_ideas = american_protection_drift_democratic
-				}
-			if = { limit = { has_idea = american_protection_defence_communism}
-				remove_ideas = american_protection_defence_communism
-				}
-			if = { limit = { has_idea = american_protection_drift_communism}
-				remove_ideas = american_protection_drift_communism
-				}
-			if = { limit = { has_idea = american_protection_defence_fascism}
-				remove_ideas = american_protection_defence_fascism
-				}
-			if = { limit = { has_idea = american_protection_drift_fascism}
-				remove_ideas = american_protection_drift_fascism
-				}
-			if = { limit = { has_idea = american_protection_drift_fascism}
-				remove_ideas = american_protection_drift_fascism
-				} }
-		USA = {
-				diplomatic_relation = { country = ELS relation = guarantee active = no }
-				}
-		314 = { add_core_of = HON }
-		declare_war_on = {
-			target = ELS
-			type = take_core_state
-			generator = { 314 }
-		}
-		}
-		search_filters = { FOCUS_FILTER_ANNEXATION }
-	}
-	focus = {
-		id = HON_liberate_nicaragua
-		icon = GFX_goal_strike_nicaragua
-		prerequisite = { focus = HON_liberate_guatemala}
-		x = 10
-		y = 7
-		cost = 5
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 2
-				strength_ratio = { tag = NIC ratio > 1.5 }
-			}
-			modifier = {
-				factor = .1
-				has_war = yes
-			}
-		}
-		
-		available = {
-			r56_script_i_am_sane = yes
-			NIC = {
-				r56_script_target_is_sane = yes
-			}
-		}
-		
-		bypass = {
-			NIC = {
-				r56_script_standard_bypass = yes
-			}
-		}
-		
-		completion_reward = {
-		NIC = {clr_country_flag = monroe_doctrine
-			if = { limit = { has_idea = american_protection_defence_democratic}
-				remove_ideas = american_protection_defence_democratic 
-				}
-			if = { limit = { has_idea = american_protection_drift_democratic}
-				remove_ideas = american_protection_drift_democratic
-				}
-			if = { limit = { has_idea = american_protection_defence_communism}
-				remove_ideas = american_protection_defence_communism
-				}
-			if = { limit = { has_idea = american_protection_drift_communism}
-				remove_ideas = american_protection_drift_communism
-				}
-			if = { limit = { has_idea = american_protection_defence_fascism}
-				remove_ideas = american_protection_defence_fascism
-				}
-			if = { limit = { has_idea = american_protection_drift_fascism}
-				remove_ideas = american_protection_drift_fascism
-				}
-			if = { limit = { has_idea = american_protection_drift_fascism}
-				remove_ideas = american_protection_drift_fascism
-				} }
-		USA = {
-				diplomatic_relation = { country = NIC relation = guarantee active = no }
-				}
-		317 = { add_core_of = HON }
-		declare_war_on = {
-			target = NIC
-			type = take_core_state
-			generator = { 317 }
-		}
-		}
-		search_filters = { FOCUS_FILTER_ANNEXATION }
-	}
-	focus = {
-		id = HON_liberate_costarica
-		icon = GFX_goal_generic_demand_territory
-		prerequisite = { focus = HON_liberate_nicaragua}
-		x = 10
-		y = 8
-		cost = 5
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 2
-				strength_ratio = { tag = COS ratio > 1.5 }
-			}
-			modifier = {
-				factor = .1
-				has_war = yes
-			}
-		}
-		available = {
-			controls_state = 317
-			r56_script_i_am_sane = yes
-			COS = {
-				r56_script_target_is_sane = yes
-			}
-		}
-		
-		bypass = {
-			COS = {
-				r56_script_standard_bypass = yes
-			}
-		}
-		
-		completion_reward = {
-		COS = {clr_country_flag = monroe_doctrine
-			if = { limit = { has_idea = american_protection_defence_democratic}
-				remove_ideas = american_protection_defence_democratic 
-				}
-			if = { limit = { has_idea = american_protection_drift_democratic}
-				remove_ideas = american_protection_drift_democratic
-				}
-			if = { limit = { has_idea = american_protection_defence_communism}
-				remove_ideas = american_protection_defence_communism
-				}
-			if = { limit = { has_idea = american_protection_drift_communism}
-				remove_ideas = american_protection_drift_communism
-				}
-			if = { limit = { has_idea = american_protection_defence_fascism}
-				remove_ideas = american_protection_defence_fascism
-				}
-			if = { limit = { has_idea = american_protection_drift_fascism}
-				remove_ideas = american_protection_drift_fascism
-				}
-			if = { limit = { has_idea = american_protection_drift_fascism}
-				remove_ideas = american_protection_drift_fascism
-				} }
-		USA = {
-				diplomatic_relation = { country = COS relation = guarantee active = no }
-				}
-		316 = { add_core_of = HON }
-		declare_war_on = {
-			target = COS
-			type = take_core_state
-			generator = { 316 }
-		}
-		}
-		search_filters = { FOCUS_FILTER_ANNEXATION }
-	}
-	focus = {
 		id = HON_liberate_panama
 		icon = GFX_goal_communist_brigades
-		prerequisite = { focus = HON_liberate_salvador}
-		x = 12
+		prerequisite = { focus = HON_liberate_central}
+		x = 11
 		y = 7
 		cost = 5
 		ai_will_do = {
@@ -3324,100 +2900,6 @@ focus = {
 				}
 		
 		create_wargoal = { type = puppet_wargoal_focus target = CUB 
-			expire = 0}
-		}
-		search_filters = { FOCUS_FILTER_ANNEXATION }
-	}
-	focus = {
-		id = HON_fullcaribfed
-		icon = GFX_goal_cuba_attack_dominican_republic
-		
-		available = {
-			
-		}
-		prerequisite = { focus = HON_caribfed}
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 2
-				strength_ratio = { tag = HAI ratio > 1.5 }
-			}
-			modifier = {
-				factor = .1
-				has_war = yes
-			}
-		}
-		x = 16
-		y = 11
-		cost = 5
-		
-		available = {
-			CUB = { is_puppet_of = HON }
-			r56_script_i_am_sane = yes
-			HAI = {
-				r56_script_target_is_sane = yes
-			}
-		}
-		
-		bypass = {
-			HAI = {
-				r56_script_standard_bypass = yes
-			}
-		}
-		
-		completion_reward = {
-				DOM = {clr_country_flag = monroe_doctrine
-			if = { limit = { has_idea = american_protection_defence_democratic}
-				remove_ideas = american_protection_defence_democratic 
-				}
-			if = { limit = { has_idea = american_protection_drift_democratic}
-				remove_ideas = american_protection_drift_democratic
-				}
-			if = { limit = { has_idea = american_protection_defence_communism}
-				remove_ideas = american_protection_defence_communism
-				}
-			if = { limit = { has_idea = american_protection_drift_communism}
-				remove_ideas = american_protection_drift_communism
-				}
-			if = { limit = { has_idea = american_protection_defence_fascism}
-				remove_ideas = american_protection_defence_fascism
-				}
-			if = { limit = { has_idea = american_protection_drift_fascism}
-				remove_ideas = american_protection_drift_fascism
-				}
-			if = { limit = { has_idea = american_protection_drift_fascism}
-				remove_ideas = american_protection_drift_fascism
-				} }
-				HAI = {clr_country_flag = monroe_doctrine
-			if = { limit = { has_idea = american_protection_defence_democratic}
-				remove_ideas = american_protection_defence_democratic 
-				}
-			if = { limit = { has_idea = american_protection_drift_democratic}
-				remove_ideas = american_protection_drift_democratic
-				}
-			if = { limit = { has_idea = american_protection_defence_communism}
-				remove_ideas = american_protection_defence_communism
-				}
-			if = { limit = { has_idea = american_protection_drift_communism}
-				remove_ideas = american_protection_drift_communism
-				}
-			if = { limit = { has_idea = american_protection_defence_fascism}
-				remove_ideas = american_protection_defence_fascism
-				}
-			if = { limit = { has_idea = american_protection_drift_fascism}
-				remove_ideas = american_protection_drift_fascism
-				}
-			if = { limit = { has_idea = american_protection_drift_fascism}
-				remove_ideas = american_protection_drift_fascism
-				} }
-		USA = {
-				diplomatic_relation = { country = DOM relation = guarantee active = no }
-				diplomatic_relation = { country = HAI relation = guarantee active = no }
-				}
-		
-		create_wargoal = { type = puppet_wargoal_focus target = DOM 
-			expire = 0}
-		create_wargoal = { type = puppet_wargoal_focus target = HAI 
 			expire = 0}
 		}
 		search_filters = { FOCUS_FILTER_ANNEXATION }
@@ -4500,216 +3982,11 @@ focus = {
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
 	}
 	focus = {
-		id = HON_reclaim_salvador
-		icon = GFX_goal_strike_elsalvador
-		prerequisite = { focus = HON_restoration_wars}
-		x = 27
-		y = 6
-		cost = 5
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 2
-				strength_ratio = { tag = ELS ratio > 1.5 }
-			}
-			modifier = {
-				factor = .1
-				has_war = yes
-			}
-		}
-		
-		available = {
-			r56_script_i_am_sane = yes
-			ELS = {
-				r56_script_target_is_sane = yes
-			}
-		}
-		
-		bypass = {
-			ELS = {
-				r56_script_standard_bypass = yes
-			}
-		}
-		
-		completion_reward = {
-		ELS = {clr_country_flag = monroe_doctrine
-			if = { limit = { has_idea = american_protection_defence_democratic}
-				remove_ideas = american_protection_defence_democratic 
-				}
-			if = { limit = { has_idea = american_protection_drift_democratic}
-				remove_ideas = american_protection_drift_democratic
-				}
-			if = { limit = { has_idea = american_protection_defence_communism}
-				remove_ideas = american_protection_defence_communism
-				}
-			if = { limit = { has_idea = american_protection_drift_communism}
-				remove_ideas = american_protection_drift_communism
-				}
-			if = { limit = { has_idea = american_protection_defence_fascism}
-				remove_ideas = american_protection_defence_fascism
-				}
-			if = { limit = { has_idea = american_protection_drift_fascism}
-				remove_ideas = american_protection_drift_fascism
-				}
-			if = { limit = { has_idea = american_protection_drift_fascism}
-				remove_ideas = american_protection_drift_fascism
-				} }
-		USA = {
-				diplomatic_relation = { country = ELS relation = guarantee active = no }
-				}
-		314 = { add_core_of = HON }
-		declare_war_on = {
-			target = ELS
-			type = take_core_state
-			generator = { 314 }
-		}
-		}
-		search_filters = { FOCUS_FILTER_ANNEXATION }
-	}
-	focus = {
-		id = HON_reclaim_nicaragua
-		icon = GFX_goal_strike_nicaragua
-		prerequisite = { focus = HON_restoration_wars}
-		x = 25
-		y = 6
-		cost = 5
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 2
-				strength_ratio = { tag = NIC ratio > 1.5 }
-			}
-			modifier = {
-				factor = .1
-				has_war = yes
-			}
-		}
-		
-		available = {
-			r56_script_i_am_sane = yes
-			NIC = {
-				r56_script_target_is_sane = yes
-			}
-		}
-		
-		bypass = {
-			NIC = {
-				r56_script_standard_bypass = yes
-			}
-		}
-		
-		completion_reward = {
-		NIC = {clr_country_flag = monroe_doctrine
-			if = { limit = { has_idea = american_protection_defence_democratic}
-				remove_ideas = american_protection_defence_democratic 
-				}
-			if = { limit = { has_idea = american_protection_drift_democratic}
-				remove_ideas = american_protection_drift_democratic
-				}
-			if = { limit = { has_idea = american_protection_defence_communism}
-				remove_ideas = american_protection_defence_communism
-				}
-			if = { limit = { has_idea = american_protection_drift_communism}
-				remove_ideas = american_protection_drift_communism
-				}
-			if = { limit = { has_idea = american_protection_defence_fascism}
-				remove_ideas = american_protection_defence_fascism
-				}
-			if = { limit = { has_idea = american_protection_drift_fascism}
-				remove_ideas = american_protection_drift_fascism
-				}
-			if = { limit = { has_idea = american_protection_drift_fascism}
-				remove_ideas = american_protection_drift_fascism
-				} }
-		USA = {
-				diplomatic_relation = { country = NIC relation = guarantee active = no }
-				}
-		317 = { add_core_of = HON }
-		declare_war_on = {
-			target = NIC
-			type = take_core_state
-			generator = { 317 }
-		}
-		}
-		search_filters = { FOCUS_FILTER_ANNEXATION }
-	}
-	focus = {
-		id = HON_reclaim_guatemala
+		id = HON_reclaim_panama
 		icon = GFX_goal_generic_occupy_states_ongoing_war
 		prerequisite = { focus = HON_restoration_wars}
-		x = 23
-		y = 6
-		cost = 5
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 2
-				strength_ratio = { tag = GUA ratio > 1.5 }
-			}
-			modifier = {
-				factor = .1
-				has_war = yes
-			}
-		}
-		
-		available = {
-			r56_script_i_am_sane = yes
-			GUA = {
-				r56_script_target_is_sane = yes
-			}
-		}
-		
-		bypass = {
-			GUA = {
-				r56_script_standard_bypass = yes
-			}
-		}
-		
-		completion_reward = {
-		GUA = {
-		clr_country_flag = monroe_doctrine
-			if = { limit = { has_idea = american_protection_defence_democratic}
-				remove_ideas = american_protection_defence_democratic 
-				}
-			if = { limit = { has_idea = american_protection_drift_democratic}
-				remove_ideas = american_protection_drift_democratic
-				}
-			if = { limit = { has_idea = american_protection_defence_communism}
-				remove_ideas = american_protection_defence_communism
-				}
-			if = { limit = { has_idea = american_protection_drift_communism}
-				remove_ideas = american_protection_drift_communism
-				}
-			if = { limit = { has_idea = american_protection_defence_fascism}
-				remove_ideas = american_protection_defence_fascism
-				}
-			if = { limit = { has_idea = american_protection_drift_fascism}
-				remove_ideas = american_protection_drift_fascism
-				}
-			if = { limit = { has_idea = american_protection_drift_fascism}
-				remove_ideas = american_protection_drift_fascism
-				}
-		}
-		USA = {
-				diplomatic_relation = { country = GUA relation = guarantee active = no }
-				}
-		313 = { add_core_of = HON }
-		declare_war_on = {
-			target = GUA
-			type = take_core_state
-			generator = { 313 }
-		}
-		}
-		search_filters = { FOCUS_FILTER_ANNEXATION }
-	}
-	focus = {
-		id = HON_reclaim_costarica
-		icon = GFX_goal_strike_costarica
-		prerequisite = { focus = HON_reclaim_nicaragua}
-		prerequisite = { focus = HON_reclaim_guatemala}
-		prerequisite = { focus = HON_reclaim_salvador}
 		x = 26
-		y = 7
+		y = 6
 		cost = 5
 		ai_will_do = {
 			factor = 10
@@ -4761,13 +4038,13 @@ focus = {
 				remove_ideas = american_protection_drift_fascism
 				} }
 		USA = {
-				diplomatic_relation = { country = COS relation = guarantee active = no }
+				diplomatic_relation = { country = PAN relation = guarantee active = no }
 				}
-		316 = { add_core_of = HON }
+		304 = { add_core_of = HON }
 		declare_war_on = {
-			target = COS
+			target = PAN
 			type = take_core_state
-			generator = { 316 }
+			generator = { 304 }
 		}
 		}
 		search_filters = { FOCUS_FILTER_ANNEXATION }
@@ -4775,11 +4052,9 @@ focus = {
 	focus = {
 		id = HON_reclaim_cuba
 		icon = GFX_goal_generic_demand_territory
-		prerequisite = { focus = HON_reclaim_nicaragua}
-		prerequisite = { focus = HON_reclaim_guatemala}
-		prerequisite = { focus = HON_reclaim_salvador}
+		prerequisite = { focus = HON_restoration_wars}
 		x = 24
-		y = 7
+		y = 6
 		cost = 5
 		ai_will_do = {
 			factor = 10
@@ -4846,115 +4121,12 @@ focus = {
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 	}
 	focus = {
-		id = HON_reclaim_hispanola
-		icon = GFX_goal_cuba_attack_dominican_republic
-		prerequisite = { focus = HON_reclaim_cuba}
-		prerequisite = { focus = HON_reclaim_costarica}
-		x = 24
-		y = 8
-		cost = 5
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 2
-				strength_ratio = { tag = HAI ratio > 1.5 }
-			}
-			modifier = {
-				factor = .1
-				has_war = yes
-			}
-			modifier = {
-				factor = .01
-				has_navy_size = { size < 2 }
-			}
-		}
-		
-		available = {
-			r56_script_i_am_sane = yes
-			HAI = {
-				r56_script_target_is_sane = yes
-			}
-		}
-		
-		bypass = {
-			HAI = {
-				r56_script_standard_bypass = yes
-			}
-		}
-		
-		completion_reward = {
-		DOM = {clr_country_flag = monroe_doctrine
-			if = { limit = { has_idea = american_protection_defence_democratic}
-				remove_ideas = american_protection_defence_democratic 
-				}
-			if = { limit = { has_idea = american_protection_drift_democratic}
-				remove_ideas = american_protection_drift_democratic
-				}
-			if = { limit = { has_idea = american_protection_defence_communism}
-				remove_ideas = american_protection_defence_communism
-				}
-			if = { limit = { has_idea = american_protection_drift_communism}
-				remove_ideas = american_protection_drift_communism
-				}
-			if = { limit = { has_idea = american_protection_defence_fascism}
-				remove_ideas = american_protection_defence_fascism
-				}
-			if = { limit = { has_idea = american_protection_drift_fascism}
-				remove_ideas = american_protection_drift_fascism
-				}
-			if = { limit = { has_idea = american_protection_drift_fascism}
-				remove_ideas = american_protection_drift_fascism
-				} }
-		HAI = {clr_country_flag = monroe_doctrine
-			if = { limit = { has_idea = american_protection_defence_democratic}
-				remove_ideas = american_protection_defence_democratic 
-				}
-			if = { limit = { has_idea = american_protection_drift_democratic}
-				remove_ideas = american_protection_drift_democratic
-				}
-			if = { limit = { has_idea = american_protection_defence_communism}
-				remove_ideas = american_protection_defence_communism
-				}
-			if = { limit = { has_idea = american_protection_drift_communism}
-				remove_ideas = american_protection_drift_communism
-				}
-			if = { limit = { has_idea = american_protection_defence_fascism}
-				remove_ideas = american_protection_defence_fascism
-				}
-			if = { limit = { has_idea = american_protection_drift_fascism}
-				remove_ideas = american_protection_drift_fascism
-				}
-			if = { limit = { has_idea = american_protection_drift_fascism}
-				remove_ideas = american_protection_drift_fascism
-				} }
-		USA = {
-				diplomatic_relation = { country = HAI relation = guarantee active = no }
-				}
-		
-		USA = {
-				diplomatic_relation = { country = DOM relation = guarantee active = no }
-				}
-		318 = { add_core_of = HON }
-		319 = { add_core_of = HON }
-		declare_war_on = {
-			target = HAI
-			type = take_core_state
-			generator = { 318 }
-		}
-		declare_war_on = {
-			target = DOM
-			type = take_core_state
-			generator = { 319 }
-		}
-		}
-		search_filters = { FOCUS_FILTER_ANNEXATION }
-	}
-	focus = {
 		id = HON_reclaim_mexico
 		icon = GFX_focus_attack_mexico
-		prerequisite = { focus = HON_reclaim_costarica}
-		x = 26
-		y = 8
+		prerequisite = { focus = HON_reclaim_panama}
+		prerequisite = { focus = HON_reclaim_cuba}
+		x = 25
+		y = 7
 		cost = 5
 		ai_will_do = {
 			factor = 10
