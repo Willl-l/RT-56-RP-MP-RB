@@ -627,246 +627,6 @@ HON_libgranperu = {
 			PRU = { country_event = hon.37 }
 		}
 	}
-HON_libhai = {
-		icon = generic_independence
-
-		allowed = {
-				always = yes
-		}
-
-		available = {
-		OR = {
-				HON = { owns_state = 318
-				}
-				HAI = { is_puppet_of = HON }
-			}
-
-		}
-
-		visible = {
-				 
-				has_completed_focus = HON_fullcaribfed
-				CUB = { 
-					NOT = { 
-							owns_state = 318
-						} 
-						}
-		}
-		
-		fire_only_once = yes
-		
-		modifier = {
-		
-		}
-
-		complete_effect = {
-		if = {
-				limit = {
-				HAI = { is_puppet_of = HON }
-		}
-			CUB = { annex_country = { target = HAI } }
-		}
-		else {
-			CUB = { transfer_state = 318
-			}
-		}
-	}
-}
-HON_libdom = {
-		icon = generic_independence
-
-		allowed = {
-				always = yes
-		}
-
-		available = {
-		OR = {
-				HON = { owns_state = 319
-				}
-				DOM = { is_puppet_of = HON }
-			}
-
-		}
-
-		visible = {
-				 
-				has_completed_focus = HON_fullcaribfed
-				CUB = { 
-					NOT = { 
-							owns_state = 319
-						} 
-						}
-		}
-		
-		fire_only_once = yes
-		
-		modifier = {
-		
-		}
-
-		complete_effect = {
-		if = {
-				limit = {
-				DOM = { is_puppet_of = HON }
-		}
-			CUB = { annex_country = { target = DOM } }
-		}
-		else {
-			CUB = { transfer_state = 319
-			}
-		}
-	}
-}
-
-HON_libnedisles = {
-		icon = generic_independence
-
-		allowed = {
-				always = yes
-		}
-
-
-		available = {
-		
-		CUB = { owns_state = 318
-				owns_state = 319
-		}
-		}
-
-		visible = {
-				has_completed_focus = HON_fullcaribfed
-				NOT = {
-				country_exists = HAI
-				country_exists = DOM
-				CUB = { 
-							owns_state = 695
-						} 
-				}
-				}
-		
-		fire_only_once = yes
-		
-		modifier = {
-		
-		}
-
-		complete_effect = {
-			HOL = { country_event = hon.40 }
-		}
-	}
-HON_libusaisles = {
-		icon = generic_independence
-
-		allowed = {
-				always = yes
-		}
-
-
-		available = {
-		
-		CUB = { owns_state = 318
-				owns_state = 319
-		}
-		}
-
-		visible = {
-				has_completed_focus = HON_fullcaribfed
-				NOT = {
-				country_exists = HAI
-				country_exists = DOM
-				CUB = { 
-							owns_state =  686
-						} 
-				}
-				}
-		
-		fire_only_once = yes
-		
-		modifier = {
-		
-		}
-
-		complete_effect = {
-			USA = { country_event = hon.43 }
-		}
-	}
-HON_libengisles = {
-		icon = generic_independence
-
-		allowed = {
-				always = yes
-		}
-
-
-		available = {
-		
-		CUB = { owns_state = 318
-				owns_state = 319
-		}
-		}
-
-		visible = {
-				has_completed_focus = HON_fullcaribfed
-				NOT = {
-				country_exists = HAI
-				country_exists = DOM
-				CUB = { 
-							owns_state =  689
-							owns_state =  690
-							owns_state =  693
-							owns_state =  308
-							owns_state =  692
-							owns_state =  691
-						} 
-				}
-				}
-		
-		fire_only_once = yes
-		
-		modifier = {
-		
-		}
-
-		complete_effect = {
-			ENG = { country_event = hon.46 }
-		}
-	}
-HON_libfraisles = {
-		icon = generic_independence
-
-		allowed = {
-				always = yes
-		}
-
-
-		available = {
-		
-		CUB = { owns_state = 318
-				owns_state = 319
-		}
-		}
-
-		visible = {
-				has_completed_focus = HON_fullcaribfed
-				NOT = {
-				country_exists = HAI
-				country_exists = DOM
-				CUB = { 
-							owns_state =  694
-						} 
-				}
-				}
-		
-		fire_only_once = yes
-		
-		modifier = {
-		
-		}
-
-		complete_effect = {
-			FRA = { country_event = hon.49 }
-		}
-	}
 	HON_libbol = {
 		icon = generic_independence
 
@@ -1573,7 +1333,7 @@ HON_develop_steel = { #313
 }
 
 hongrabstuff_decisions = { 
-HON_seize_belize = { #311
+HON_seize_belize = { 311
 		
 		icon = generic_operation
 
@@ -1591,8 +1351,7 @@ HON_seize_belize = { #311
 		}
 
 		visible = {
-			OR = {has_completed_focus = HON_liberate_guatemala
-			has_completed_focus = HON_reclaim_guatemala }
+			has_completed_focus = HON_pressure_eng
 		}
 
 		fire_only_once = yes
@@ -1612,7 +1371,7 @@ HON_seize_belize = { #311
 			ENG = { country_event = hon.22 }
 		}
 	}
-	HON_seize_canal = { #685
+	HON_seize_canal = { 685
 		
 		icon = generic_operation
 
@@ -1630,7 +1389,7 @@ HON_seize_belize = { #311
 		}
 
 		visible = {
-			has_completed_focus = HON_liberate_panama
+			has_completed_focus = HON_pressure_usa
 		}
 
 		fire_only_once = yes
