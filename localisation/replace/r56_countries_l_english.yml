@@ -1027,12 +1027,16 @@
  HUN_fascism_DEF:0 "the Kingdom of Hungary"
 
  #HON
- HON_fascism:0 "Republic of Honduras"
- HON_fascism_DEF:0 "the Republic of Honduras"
- HON_democratic:0 "Republic of Honduras"
- HON_democratic_DEF:0 "the Republic of Honduras"
- HON_neutrality:0 "Republic of Honduras"
- HON_neutrality_DEF:0 "the Republic of Honduras"
+ HON_fascism:0 "United Banana Republic"
+ HON_fascism_DEF:0 "the United Banana Republic"
+ HON_democratic:0 "Centro-America"
+ HON_democratic_DEF:0 "Centro-America"
+ HON_neutrality:0 "Centro-America"
+ HON_neutrality_DEF:0 "Centro-America"
+ HON_fascism_ADJ:0 "Bananas"
+ HON_democratic_ADJ:0 "Centro-Americans"
+ HON_neutrality_ADJ:0 "Centro-Americans"
+ HON_communism_ADJ:0 "Centro-Americans"
 
  #HOL
  HOL_democratic:0 "Kingdom of the Netherlands"
