@@ -62,6 +62,8 @@ ITA_historical_plan = {
 		ITA_develop_southern_shipyards
 		ITA_prepare_the_economy_for_war
 		ITA_po_valley_mettalurgy
+		ITA_increase_wheat_production
+		ITA_general_equipment_modernization
 		ITA_invade_greece
 	}
 	
