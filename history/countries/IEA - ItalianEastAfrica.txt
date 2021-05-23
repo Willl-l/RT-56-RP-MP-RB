@@ -32,6 +32,8 @@ if = {
 
 set_convoys = 50
 
+oob = "IEA_1936"
+
 set_popularities = {
 	fascism = 90
 	neutrality = 10
@@ -40,8 +42,6 @@ set_popularities = {
 }
 
 set_technology = {
-
-	# Extended Technologies
 
 	infantry_weapons = 1
 	infantry_weapons1 = 1
