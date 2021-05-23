@@ -5277,9 +5277,13 @@ focus_tree = {
 			cancel = {
 					OR = {
 							has_war_with = SOV
+							has_war_with = POL
 							NOT = {
 									country_exists = SOV
 								}
+							NOT = {
+								country_exists = POL
+							}
 						}
 				}
 			completion_reward = {

@@ -2194,6 +2194,32 @@ ideas = {
 					ai_focus_peaceful_factor = 0.5
 				}
 			}
+		}
+		SOV_agressive_neighbour = {
+
+			removal_cost = 80
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = GFX_focus_attack_germany
+
+			modifier = {
+				consumer_goods_factor = -0.03
+				production_speed_arm_factory_factor = -0.1
+				mobilization_speed = 0.1
+				target = {
+					tag = GER 
+					defense_bonus_against = 0.1
+					attack_bonus_against = 0.1
+					opinion_gain_monthly = -2.00
+				}
+			}
 		}			
 	}
 

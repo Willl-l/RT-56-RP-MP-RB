@@ -225,6 +225,7 @@
  SOV_extend_the_curtain_outwards:0 "Extend the Iron Curtain Outwards"
  SOV_extend_the_curtain_outwards_desc:0 ""
  SOV_cold_war_idea:0 "Cold War"
+ SOV_agressive_neighbour:0 "German Aggression"
 
  socialism_in_one_country:0 "Socialism in One Country"
  socialism_in_one_country_desc:0 "[SOV.GetLeader] believes that only when the Soviet Union is strong, should it spread Marxist revolution abroad."
