@@ -1,5 +1,5 @@
 ﻿###########################
-# Custom R56 Soviet events#
+# Custom R56 Soviet events# (added to by DoritoKing94)
 ###########################
 
 add_namespace = r56.soviet
@@ -1228,3 +1228,35 @@ country_event = {
 	}
 }
 
+
+#if no mol rib pact sov gets event
+country_event = { 
+	id = r56.soviet.205
+	title = "Germany has pushed to the borders of the Motherland"
+	desc = r56.soviet.205.d
+	picture = ########
+
+	fire_only_once = yes
+
+	trigger = {
+		if = {
+			GER = {
+				AND {
+					has_war_with = POL
+					GER = { NOT = { has_completed_focus = GER_mol_rib_pact } }
+				}
+			}
+
+		}
+	}
+
+	option = {
+		name = "We must mobilise quickly!"
+	}
+
+	immediate = {
+		hidden_effect = {
+			SOV = { add_ideas = SOV_aggressive_neighbour }
+		}
+	}
+}

@@ -2195,7 +2195,7 @@ ideas = {
 				}
 			}
 		}
-		SOV_agressive_neighbour = {
+		SOV_aggressive_neighbour = {
 
 			removal_cost = 80
 
@@ -2207,18 +2207,14 @@ ideas = {
 				always = yes
 			}
 
-			picture = GFX_focus_attack_germany
+			cancel = {}
+
+			picture = ######
 
 			modifier = {
 				consumer_goods_factor = -0.03
-				production_speed_arm_factory_factor = -0.1
+				production_speed_arms_factory_factor = 0.1
 				mobilization_speed = 0.1
-				target = {
-					tag = GER 
-					defense_bonus_against = 0.1
-					attack_bonus_against = 0.1
-					opinion_gain_monthly = -2.00
-				}
 			}
 		}			
 	}
