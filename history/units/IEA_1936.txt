@@ -15,3 +15,59 @@ division_template = {
 
 	priority = 1
 } 
+
+division_template = { 
+	name = "Divisione Alpina" 
+	division_names_group = ITA_MNT_01 
+
+	regiments = { 
+		mountaineers = { x = 0 y = 0 } 												# (elite) Alpini Regiment
+		mountaineers = { x = 0 y = 1 } 
+		mountaineers = { x = 0 y = 2 } 
+		mountaineers = { x = 1 y = 0 } 
+		mountaineers = { x = 1 y = 1 } 
+		mountaineers = { x = 1 y = 2 } 
+	} 
+	support = { 
+		engineer = { x = 0 y = 0 }  
+	} 
+
+	priority = 2 
+}
+
+
+
+
+
+#### OOB #####
+
+units = {
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		} 
+		location = 5010 
+		division_template = "1a Divisione Coloniale"	
+		start_experience_factor = 0.4
+	} 
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		} 
+		location = 12766
+		division_template = "2a Divisione Coloniale"	
+		start_experience_factor = 0.4
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		} 
+		location = 12991
+		division_template = "3a Divisione Coloniale"	
+		start_experience_factor = 0.4
+	}
+
+}

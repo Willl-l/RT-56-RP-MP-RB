@@ -1,7 +1,9 @@
 capital = 271
 
+oob = "IEA_1936"
+
 set_war_support = 0.90
-set_stability = 0.32
+set_stability = 0.30
 set_research_slots = 3
 
 set_politics = {
@@ -32,8 +34,6 @@ if = {
 
 set_convoys = 50
 
-oob = "IEA_1936"
-
 set_popularities = {
 	fascism = 90
 	neutrality = 10
@@ -52,13 +52,6 @@ set_technology = {
 	gw_artillery = 1
 	gwtank = 1
 	early_fighter = 1
-	early_bomber = 1
-	naval_bomber1 = 1
-	CAS1 = 1
-	flying_boat = 1
-	asymmetical_warfare = 1
-	fuel_silos = 1
-	fuel_refining = 
+	fuel_refining = 0
 	tech_mountaineers = 1
-	shocktroops = 1
 }

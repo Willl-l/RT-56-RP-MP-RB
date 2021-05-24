@@ -2207,7 +2207,7 @@ ideas = {
 				always = yes
 			}
 
-			picture = idea_generic_war_preparation
+			picture = generic_war_preparation
 
 			modifier = {
 				consumer_goods_factor = -0.03
