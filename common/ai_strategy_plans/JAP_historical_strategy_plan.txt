@@ -57,7 +57,7 @@ JAP_historical_plan = {
 		JAP_the_ultimate_battleship
 		JAP_strike_south_doctrine
 		JAP_non_aggression_pact_with_the_soviet_union
-		JAP_secure_the_phillipines
+		JAP_secure_the_philippines
 		JAP_strike_on_the_southern_resource_area
 		JAP_warrior_spirit
 	}
