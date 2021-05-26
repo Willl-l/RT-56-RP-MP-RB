@@ -48,7 +48,7 @@ units = {
 			name_order = 4
 		} 
 		location = 5010 
-		division_template = "1a Divisione Coloniale"	
+		division_template = "Divisione Coloniale"	
 		start_experience_factor = 0.4
 	} 
 	division = {
@@ -57,7 +57,7 @@ units = {
 			name_order = 4
 		} 
 		location = 12766
-		division_template = "2a Divisione Coloniale"	
+		division_template = "Divisione Coloniale"	
 		start_experience_factor = 0.4
 	}
 	division = {
@@ -66,8 +66,24 @@ units = {
 			name_order = 4
 		} 
 		location = 12991
-		division_template = "3a Divisione Coloniale"	
+		division_template = "Divisione Coloniale"	
 		start_experience_factor = 0.4
 	}
 
+}
+
+
+
+instant_effect = {
+		##### Equipments #####
+		add_equipment_production = { 
+			equipment = { 
+				type = infantry_equipment_1 
+				creator = "IEA" 
+			} 
+
+			requested_factories = 1
+			progress = 0.1 
+			efficiency = 50 
+		}
 }
