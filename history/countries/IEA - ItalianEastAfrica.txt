@@ -1,9 +1,8 @@
 capital = 271
 
-oob = "IEA_1936"
 
 set_war_support = 0.90
-set_stability = 0.30
+set_stability = 0.28
 set_research_slots = 3
 
 set_politics = {

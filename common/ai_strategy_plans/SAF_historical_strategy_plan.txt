@@ -19,7 +19,7 @@ SAF_historical = {
 	ai_national_focuses = {
 		SAF_organize_district_commands
 		SAF_mission_to_europe
-		SAF_prioritize_q_serviec_corps
+		SAF_prioritize_q_service_corps
 		SAF_local_tank_program
 		SAF_locally_built_armored_cars
 		SAF_ethnic_legislation
@@ -36,7 +36,7 @@ SAF_historical = {
 	}
 
 	research = {
-		heavy_armor = 75.0
+		armor_tech = 75.0
 		industry = 20.0
 		infantry_tech = 15.0
 		artillery = 8.0

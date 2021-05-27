@@ -1328,6 +1328,7 @@ focus_tree = {
 				transfer_state = 271
 				transfer_state = 550
 				transfer_state = 559
+				load_oob = "IEA_1936"
 			}
 			550 = {
 				add_core_of = IEA			
@@ -1337,6 +1338,14 @@ focus_tree = {
 			}
 			559 = {
 				add_core_of = IEA			
+			}
+
+			550 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
 			}
 
 			set_autonomy = {
