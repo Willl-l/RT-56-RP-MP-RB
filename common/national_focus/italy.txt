@@ -4598,6 +4598,10 @@ focus_tree = {
 		}
 		x = 62
 		y = 5
+		available = {
+			date > 1939.1.1
+		}
+
 		ai_will_do = {
 			factor = 50
 			modifier = {

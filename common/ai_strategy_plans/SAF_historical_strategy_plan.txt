@@ -17,9 +17,26 @@ SAF_historical = {
 	}
 
 	ai_national_focuses = {
+		SAF_organize_district_commands
+		SAF_mission_to_europe
+		SAF_prioritize_q_serviec_corps
+		SAF_local_tank_program
+		SAF_locally_built_armored_cars
+		SAF_ethnic_legislation
+		SAF_policy_of_cooperation
+		SAF_railway_development
+		SAF_mining_development
+		SAF_develop_gold_extraction
+		SAF_transvaal_urbanization
+		SAF_economic_expansion
+		SAF_magazine_hill_ammunition_plant
+		SAF_industrial_innovations
+		SAF_expand_around_magazine_hill
+		SAF_local_manufacturing_industry
 	}
 
 	research = {
+		heavy_armor = 75.0
 		industry = 20.0
 		infantry_tech = 15.0
 		artillery = 8.0
