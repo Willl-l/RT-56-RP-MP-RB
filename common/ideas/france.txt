@@ -1651,10 +1651,10 @@ ideas = {
 			picture = generic_wall_line
 			
 			modifier = {
-				max_planning = 0.25
+				max_planning = 0.30
 				planning_speed = -0.25
 				offence = -0.05
-				ai_focus_on_defense = 0.5
+				ai_focus_on_defence = 0.5
 			}
 		}
 
