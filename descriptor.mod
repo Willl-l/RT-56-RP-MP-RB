@@ -7,5 +7,5 @@ tags={
 	"Military"
 }
 name="RT56 RP MP Rebalanced"
-supported_version="1.10.5"
+supported_version="1.10.7"
 remote_file_id="2498721274"

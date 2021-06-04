@@ -21,9 +21,9 @@ NDefines.NMilitary.DEPLOY_TRAINING_MAX_LEVEL = 5
 NDefines.NMilitary.UNIT_EXP_LEVELS = {0.02, 0.04, 0.06,	0.08, 0.1, 0.14, 0.18, 0.22, 0.26, 0.3, 0.39, 0.48, 0.57, 0.66, 0.75, 0.78, 0.81, 0.84, 0.87, 0.9}
 NDefines.NMilitary.ARMY_EXP_BASE_LEVEL = 5
 NDefines.NMilitary.TRAINING_MAX_LEVEL = 10
-NDefines.NMilitary.MAX_ARMY_EXPERIENCE = 1000 -- Max army experience a country can store
-NDefines.NMilitary.MAX_NAVY_EXPERIENCE = 1000 -- Max navy experience a country can store
-NDefines.NMilitary.MAX_AIR_EXPERIENCE = 1000  -- Max air experience a country can store
+NDefines.NMilitary.MAX_ARMY_EXPERIENCE = 2000 -- Max army experience a country can store
+NDefines.NMilitary.MAX_NAVY_EXPERIENCE = 2000 -- Max navy experience a country can store
+NDefines.NMilitary.MAX_AIR_EXPERIENCE = 2000  -- Max air experience a country can store
 NDefines.NMilitary.EXPERIENCE_COMBAT_FACTOR = 0.03
 NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 32
 NDefines.NMilitary.RECON_SKILL_IMPACT = 6
@@ -161,11 +161,12 @@ NAI = {
 	DEMOCRACIES_ALLY_COMMUNISTS = -75,
 	COMMUNISTS_ALLY_DEMOCRACIES = -75,
 	
-	DESPERATE_AI_WEAK_UNIT_STR_LIMIT = 0.1,					-- ai will increase number of units assigned to break from desperate situations when units are start falling lower than this str limit
-	DESPERATE_AI_MIN_ORG_BEFORE_ATTACK = 0.85,					-- ai will wait for this much org to attack an enemy prov in desperate situations
-	DESPERATE_AI_MIN_ORG_BEFORE_MOVE = 0.25,					-- ai will wait for this much org to move in desperate situations
+	DESPERATE_AI_WEAK_UNIT_STR_LIMIT = 0.2,					-- ai will increase number of units assigned to break from desperate situations when units are start falling lower than this str limit
+	DESPERATE_AI_MIN_ORG_BEFORE_ATTACK = 0.65,					-- ai will wait for this much org to attack an enemy prov in desperate situations
+	DESPERATE_AI_MIN_ORG_BEFORE_MOVE = 0.15,					-- ai will wait for this much org to move in desperate situations
 	DESPERATE_ATTACK_WITHOUT_ORG_WHEN_NO_ORG_GAIN = 175,		-- if ai can't regain enough org to attack in this many hours, it will go truly desperate and attack anyway (still has to wait for move org)
 
+	-- changed by DoritoKing94, AI should be a bit more aggressive and reactive here
 
 
 	DIVISION_DESIGN_WEIGHTS = {							-- Base values used by AI to evaluate value of a stat
@@ -211,9 +212,9 @@ NAI = {
 		0.0, -- air_range
 		0.0, -- air_defence
 		0.0, -- air_attack
-		0.0, -- air_agility
+		0.025, -- air_agility -- test by DoritoKing94 check AS
 		0.0, -- air_bombing
-		0.01, -- air_superiority #ai nudge for the most important air stat bar none - Spicyalfredo
+		0.05, -- air_superiority #ai nudge for the most important air stat bar none - Spicyalfredo -- DoritoKing94, wouldn't it be better to have this higher and favour AI agility?
 		0.0, -- naval_strike_attack
 		0.0, -- naval_strike_targetting
 		0.0, -- air_ground_attack
@@ -238,7 +239,7 @@ NAI = {
 	},
 
 
-	INVASION_COASTAL_PROVS_PER_ORDER = 28,				-- AI will consider one extra invasion per number of provinces stated here (num orders = total coast / this)
+	INVASION_COASTAL_PROVS_PER_ORDER = 28,		-- AI will consider one extra invasion per number of provinces stated here (num orders = total coast / this)
 
 	MAX_UNITS_FACTOR_INVASION_ORDER = 1.0,				-- Factor for max number of units to assign to naval invasion orders
 	DESIRED_UNITS_FACTOR_INVASION_ORDER = 1.0,			-- Factor for desired number of units to assign to naval invasion orders
@@ -265,9 +266,9 @@ NAI = {
 
 	XP_RATIO_REQUIRED_TO_RESEARCH_WITH_XP = 1.5,		-- AI will at least need this amount of xp compared to cost of a tech to reserch it with XP #BASE WAS 2.0	
 
-	FRONT_EVAL_UNIT_ACCURACY = 0.9,                             -- scale how stupid ai will act on fronts. 0 is potato #BASE WAS 0.7
+	FRONT_EVAL_UNIT_ACCURACY = 0.95,  --was 0.9                           -- scale how stupid ai will act on fronts. 0 is potato #BASE WAS 0.7 -- DoritoKing94 try 0.95
 
-	MIN_NUM_CONQUERED_PROVINCES_TO_DEPRIO_NAVAL_INVADED_FRONTS = 35,	-- if you conquer this amount of provinces after a naval invasion, it will lose its prio status and will act as a regular front
+	MIN_NUM_CONQUERED_PROVINCES_TO_DEPRIO_NAVAL_INVADED_FRONTS = 32,	-- if you conquer this amount of provinces after a naval invasion, it will lose its prio status and will act as a regular front
 
 	BUILDING_TARGETS_BUILDING_PRIORITIES = {				-- buildings in order of pirority when considering building targets strategies. First has the greatest priority, omitted has the lowest. NOTE: not all buildings are supported by building targets strategies.
 		'industrial_complex',
