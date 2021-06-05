@@ -3305,7 +3305,7 @@ focus_tree = {
 	focus = {
 		id = ITA_formalize_the_albanian_protectorate
 		icon = GFX_goal_italy_albanian_protectorate
-		cost = 8
+		cost = 10
 		prerequisite = {
 			focus = ITA_revive_the_stresa_front
 		}
