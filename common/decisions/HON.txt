@@ -1335,7 +1335,7 @@ HON_develop_steel = { #313
 hongrabstuff_decisions = { 
 HON_seize_belize = { 311
 		
-		icon = generic_operation
+icon = generic_operation
 
 		allowed = {
 			
@@ -1373,7 +1373,7 @@ HON_seize_belize = { 311
 	}
 	HON_seize_canal = { 685
 		
-		icon = generic_operation
+	icon = generic_operation
 
 		allowed = {
 			
