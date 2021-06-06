@@ -785,8 +785,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_tech_bonus = {
-				bonus = 1
-				ahead_reduction = 2
+				bonus = 1.5
 				uses = 1
 				technology = CAS1
 				technology = CAS2
@@ -865,8 +864,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_tech_bonus = {
-				bonus = 1
-				ahead_reduction = 2
+				bonus = 1.5
 				uses = 1
 				technology = fighter1
 				technology = fighter2
