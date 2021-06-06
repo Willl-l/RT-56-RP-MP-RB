@@ -4,6 +4,7 @@ ai_focus_defense_SOV = {
 		defensive = 5.0
 		construction_tech = 2.0
 		artillery = 4.0
+		armor = 9.0
 	}
 }
 
