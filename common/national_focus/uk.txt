@@ -2166,12 +2166,12 @@ focus_tree = {
 		x = -3
 		y = 1
 		relative_position_id = uk_mediterranean_focus
-		cost = 10
+		cost = 8
 		completion_reward = {
 			118 = {
 				add_building_construction = {
 					type = bunker
-					level = 4
+					level = 5
 					province = 4135
 					instant_build = yes
 				}
