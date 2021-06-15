@@ -1345,3 +1345,16 @@ turkish_civil_war_SOV_support = {
 		value = 250
 	}	
 }
+
+
+
+
+SOV_no_planes = { #last try to get them to ditch planes - DoritoKing94
+	enable = {
+		original_tag = SOV
+	}
+	ai_strategy = {
+		type =  air_factory_balance
+		value = 0
+	}
+}
