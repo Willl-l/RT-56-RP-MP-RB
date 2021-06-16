@@ -1909,7 +1909,7 @@ instant_effect = {
 			type = support_equipment_1
 			creator = "SOV" 
 		}
-		requested_factories = 2
+		requested_factories = 3
 		progress = 0.3
 		efficiency = 50
 	}
@@ -1919,7 +1919,7 @@ instant_effect = {
 			type = artillery_equipment_1
 			creator = "SOV" 
 		}
-		requested_factories = 1
+		requested_factories = 2
 		progress = 0.3
 		efficiency = 50
 	}
@@ -1941,26 +1941,6 @@ instant_effect = {
 		}
 		requested_factories = 3
 		progress = 0.4
-		efficiency = 50
-	}
-
-	add_equipment_production = {
-		equipment = {
-			type = fighter_equipment_1
-			creator = "SOV" 
-		}
-		requested_factories = 1
-		progress = 0.15
-		efficiency = 50
-	}
-
-	add_equipment_production = {
-		equipment = {
-			type = strat_bomber_equipment_1
-			creator = "SOV" 
-		}
-		requested_factories = 1
-		progress = 0.2
 		efficiency = 50
 	}
 }

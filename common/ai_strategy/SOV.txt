@@ -1355,6 +1355,6 @@ SOV_no_planes = { #last try to get them to ditch planes - DoritoKing94
 	}
 	ai_strategy = {
 		type =  air_factory_balance
-		value = 0
+		value = -999999
 	}
 }

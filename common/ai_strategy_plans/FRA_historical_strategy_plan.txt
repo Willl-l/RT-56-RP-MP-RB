@@ -67,6 +67,7 @@ FRA_historical_plan = {
 	}
 	
 	focus_factors = {
+		FRA_popular_front_united = 0
 		FRA_vienot_agreement = 0
 		FRA_radicalize_front = 0
 		FRA_little_entente = 0

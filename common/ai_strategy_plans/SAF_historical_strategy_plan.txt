@@ -36,7 +36,7 @@ SAF_historical = {
 	}
 
 	research = {
-		armor_tech = 75.0
+		armor_tech = 125.0
 		industry = 20.0
 		infantry_tech = 15.0
 		artillery = 8.0
