@@ -5951,7 +5951,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = USA_tank_experiments
 				uses = 1
-				bonus = 1.0
+				bonus = 1.25
 				category = armor
 			}
 		}

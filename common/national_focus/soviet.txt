@@ -4085,6 +4085,21 @@ focus = {
 			TAN = {
 				country_event = { id = soviet.14 }
 			}
+			MON = {
+				country_event = { id = soviet.14 }
+			}
+			848 = {
+				add_core_of = SOV
+			}
+			849 = {
+				add_core_of = SOV
+			}
+			850 = {
+				add_core_of = SOV
+			}
+			330 = {
+				add_core_of = SOV
+			}
 		}
 	}
 

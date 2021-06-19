@@ -416,6 +416,7 @@ country_event = {
 	option = {
 		name = soviet.16.a
 		annex_country = { target = TAN }
+		annex_country = { target = MON }
 		hidden_effect = {
 			SOV = {
 				country_event = { days = 1 id = news.14 }

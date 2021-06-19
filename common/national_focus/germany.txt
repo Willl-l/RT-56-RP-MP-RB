@@ -781,7 +781,7 @@ focus_tree = {
 	focus = {
 		id = GER_appoint_economic_positions
 		icon = GFX_goal_generic_bills
-		cost = 3.00
+		cost = 2.00
 		prerequisite = {
 			focus = GER_begin_depression_recovery
 		}
@@ -1749,7 +1749,7 @@ focus_tree = {
 	focus = {
 		id = GER_blitzkreig_tactics
 		icon = GFX_goal_tank_map
-		cost = 5.00
+		cost = 6.00
 		prerequisite = {
 			focus = GER_prepare_france_invasion
 		}
@@ -1806,7 +1806,7 @@ focus_tree = {
 	focus = {
 		id = GER_build_panzer_army
 		icon = GFX_goal_ger_panzers
-		cost = 10.00
+		cost = 6.00
 		prerequisite = {
 			focus = GER_prepare_france_invasion
 		}
@@ -1818,7 +1818,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = GER_build_panzer_army
-				bonus = 1.50
+				bonus = 1.25
 				uses = 1
 				category = armor
 			}			
@@ -4326,7 +4326,7 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_prepare_poland_invasion
 		}
-		x = 40
+		x = 41
 		y = 3
 		ai_will_do = {
 			factor = 12
@@ -4367,12 +4367,12 @@ focus_tree = {
 	focus = {
 		id = GER_schwerepunkt_tactics
 		icon = GFX_goal_generic_army_motorized
-		cost = 5.00
+		cost = 10.00
 		prerequisite = {
-			focus = GER_prepare_poland_invasion
+			focus = GER_rhineland
 		}
-		x = 42
-		y = 3
+		x = 44
+		y = 1
 			ai_will_do = {
 					factor = 12
 				}
@@ -4398,9 +4398,6 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = GER_modernize_CAS
-		}
-		prerequisite = {
-			focus = GER_schwerepunkt_tactics
 		}
 		mutually_exclusive = {
 			focus = GER_poland_friend
@@ -5242,7 +5239,7 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_demand_memel
 		}
-		x = 44
+		x = 43
 		y = 2
 			ai_will_do = {
 					factor = 10
@@ -5294,7 +5291,7 @@ focus_tree = {
 	focus = {
         id = GER_ussr_treaty
         icon = GFX_goal_generic_scientific_exchange
-        prerequisite = { focus = GER_mol_rib_pact }
+        prerequisite = { focus = GER_schwerepunkt_tactics }
         available = {
             NOT = { has_completed_focus = GER_soviet_invasion }
             NOT = { has_completed_focus = GER_danzig_or_war }
