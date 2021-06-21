@@ -1,0 +1,9 @@
+NZL_no_planes = { 
+	enable = {
+		original_tag = NZL
+	}
+	ai_strategy = {
+		type =  air_factory_balance
+		value = -999999
+	}
+}

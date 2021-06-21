@@ -4223,12 +4223,15 @@ country_event = {
 			name = GER_soviet_treaty
 			ahead_reduction = 2
 			technology = basic_medium_tank
+			technology = improved_medium_tank
+			technology = advanced_medium_tank
 		}
 		add_tech_bonus = {
 			name = GER_soviet_treaty
 			bonus = 1.0
 			uses = 1
-			category = armor
+			technology = improved_heavy_tank
+			
 		}
 		SOV = {
 			add_opinion_modifier = { target = GER modifier = sov_ger_treaty }

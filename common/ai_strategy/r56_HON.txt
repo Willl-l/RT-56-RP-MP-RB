@@ -240,3 +240,13 @@ HON_nice_demo_boy_stays_home_unless_something_goes_wrong = {
 	}
 
 }
+
+HON_no_planes = { 
+	enable = {
+		original_tag = HON
+	}
+	ai_strategy = {
+		type =  air_factory_balance
+		value = -999999
+	}
+}

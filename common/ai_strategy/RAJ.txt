@@ -1,0 +1,10 @@
+
+RAJ_no_planes = { 
+	enable = {
+		original_tag = RAJ
+	}
+	ai_strategy = {
+		type =  air_factory_balance
+		value = -999999
+	}
+}

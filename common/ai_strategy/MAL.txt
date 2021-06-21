@@ -1,0 +1,9 @@
+MAL_no_planes = { 
+	enable = {
+		original_tag = MAL
+	}
+	ai_strategy = {
+		type =  air_factory_balance
+		value = -999999
+	}
+}

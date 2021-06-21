@@ -203,3 +203,13 @@ SAF_research_mechanized = {
 	}
 }
 
+
+SAF_no_planes = { 
+	enable = {
+		original_tag = SAF
+	}
+	ai_strategy = {
+		type =  air_factory_balance
+		value = -999999
+	}
+}
