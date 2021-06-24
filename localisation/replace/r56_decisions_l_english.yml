@@ -204,3 +204,13 @@ decision_cost_CP_10_pp_10_tooltip:0 "It costs £command_power §H10§! and £pol
 
  LAT_contact_attaches_cost_blocked:0 "£command_power §R10§! £pol_power §R10§!"
  LAT_contact_attaches_cost_tooltip:0 "It costs £command_power §H10§! and £pol_power §H10§! to select this"
+
+
+
+
+#templates by DoritoKing94
+gen_templates:0 "For those who are lazy..."
+gen_militarypolice:0 "Suppression with MP"
+gen_garrison:0 "Normal Suppression"
+gen_converts:0 "Converts"
+one_div_training:0 "1 Division Training"
