@@ -38,9 +38,9 @@ ideas = {
 			picture = SOV_revolutionized_industry
 			
 			modifier = {
-					consumer_goods_factor = 0.1
+					consumer_goods_factor = 0.05
 					industrial_capacity_factory = 0.1
-					research_speed_factor = -0.1
+					research_speed_factor = -0.05
 					custom_modifier_tooltip = SOV_revolutionized_industry_ghost_tt
 			}
 		}
@@ -1325,7 +1325,7 @@ ideas = {
 			picture = generic_research_bonus
 			
 			modifier = {
-				research_speed_factor = 0.02 #buffed due to 1.6
+				research_speed_factor = 0.1 #buffed due to 1.6
 			}
 		}
 		progress_cult_focus_2 = {
@@ -1345,7 +1345,7 @@ ideas = {
 			picture = generic_research_bonus
 			
 			modifier = {
-				research_speed_factor = 0.06 #buffed due to 1.6
+				research_speed_factor = 0.12 #buffed due to 1.6
 			}
 		}
 

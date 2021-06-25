@@ -2518,7 +2518,6 @@ focus = {
 
 		completion_reward = {
 			add_ideas = progress_cult_focus
-			add_research_slot = 1
 			if = {
 				limit = {
 						has_completed_focus = SOV_Invest_in_Engineering
@@ -2770,6 +2769,7 @@ focus = {
 
 		completion_reward = {
 			swap_ideas = { remove_idea = progress_cult_focus add_idea = progress_cult_focus_2 }
+			add_research_slot = 1
 			add_tech_bonus = {
 				name = nuclear_bonus
 				bonus = 0.25
