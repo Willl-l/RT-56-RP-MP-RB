@@ -99,7 +99,7 @@ SAF_defend_africa = {
 	ai_strategy = {
 		type = area_priority
 		id = 17 #East Africa
-		value = 400 #defend home plus eliminate Italian East Africa
+		value = 250 #defend home plus eliminate Italian East Africa
 	}
 	ai_strategy = {
 		type = area_priority
@@ -145,61 +145,6 @@ SAF_template_design = {
 		type = template_prio
 		id = medium_armor
 		value = -9999
-	}
-}
-
-
-
-
-
-#sorry that your 3 research slots will be used up all game, sacrifice for allies win?
-
-
-SAF_research_heavy_tank_1 = {
-	enable = {
-		original_tag = SAF
-	}
-	ai_strategy = {
-		type = research_tech
-		id = basic_heavy_tank
-		value = 999999999999999
-	}
-}
-
-
-SAF_research_heavy_tank_2 = {
-	enable = {
-		original_tag = SAF
-		date > 1937.11.1 #last month take 100% boost and start rushing ht2
-	}
-	ai_strategy = {
-		type = research_tech
-		id = improved_heavy_tank
-		value = 999999999999999
-	}
-}
-
-SAF_research_motorised = {
-	enable = {
-		original_tag = SAF
-		date > 1937.8.1 #pick up motorised in prep for mech
-	}
-	ai_strategy = {
-		type = research_tech
-		id = motorized
-		value = 999999999999999
-	}
-}
-
-SAF_research_mechanized = {
-	enable = {
-		original_tag = SAF
-		date > 1938.6.1 #now get mech
-	}
-	ai_strategy = {
-		type = research_tech
-		id = mechanized
-		value = 999999999999999
 	}
 }
 
