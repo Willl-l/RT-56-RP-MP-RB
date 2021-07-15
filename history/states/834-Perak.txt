@@ -3,7 +3,7 @@ state={
 	id=834
 	name="STATE_834"
 	history={
-		owner = MAL
+		owner = ENG
 		add_core_of = MAL
 		victory_points = {
 			10199 1 
