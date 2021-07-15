@@ -309,7 +309,7 @@ ideas = {
 				lend_lease_tension = -1
 			}
 		}
-		USA_accumulated_wealth_tax_act = {
+		USA_federal_housing_act = {
 			picture = generic_foreign_capital
 			
 			allowed = {

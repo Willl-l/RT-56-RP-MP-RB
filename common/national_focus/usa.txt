@@ -555,65 +555,12 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = USA_accumulated_wealth_tax_act
-		icon = GFX_focus_rom_parties_end
-		x = 2
-		y = 1
-		prerequisite = { focus = USA_union_representation_act }
-		relative_position_id = USA_union_representation_act
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			OR = {
-				has_idea_with_trait = communist_revolutionary
-				has_government = communism
-			}
-			congress_high_support_trigger = yes
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = no
-		continue_if_invalid = yes
-		available_if_capitulated = no
-		search_filters = {FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY FOCUS_FILTER_USA_CONGRESS}
-		completion_reward = {
-			add_ideas = USA_accumulated_wealth_tax_act
-			if = {
-				limit = {
-					communism > 0.3
-					not = { has_government = communism }
-				}
-				USA_congress_medium_opposition = yes
-			}
-			else_if = {
-				limit = {
-					communism < 0.3
-					not = { has_government = communism }
-				}
-				USA_congress_large_opposition = yes
-				add_popularity = {
-					ideology = communism
-					popularity = 0.05
-				}
-			}
-			USA_great_depression_level_down = yes
-		}
-	}
-	focus = {
 		id = USA_guarantee_the_american_dream
 		icon = GFX_focus_usa_guarantee_the_american_dream
 		x = 0
 		y = 2
 		#prerequisite = { focus = USA_democratic_socialism }
 		prerequisite = { focus = USA_old_age_pension_act }
-		prerequisite = { focus = USA_accumulated_wealth_tax_act }
 		relative_position_id = USA_union_representation_act
 		cost = 10
 
@@ -1413,6 +1360,7 @@ focus_tree = {
 		completion_reward = {
 			USA_great_depression_level_down = yes
 			USA_congress_medium_opposition = yes
+			add_ideas = USA_federal_housing_act
 			custom_effect_tooltip = federal_housing_tt
 			hidden_effect = {
 				random_owned_controlled_state = {
