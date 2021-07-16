@@ -1367,8 +1367,8 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_naval_rearmament_r56
 		}
-		x = 18
-		y = 2
+		x = 17
+		y = 3
 			ai_will_do = {
 					factor = 10
 				}
@@ -1425,7 +1425,7 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_plan_sealion
 		}
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = GER_plan_sealion
 			ai_will_do = {
@@ -1479,7 +1479,7 @@ focus_tree = {
 		}		
 		relative_position_id = GER_plan_sealion
 		x = -2
-		y = 2
+		y = 3
 			ai_will_do = {
 					factor = 10
 				}
@@ -1503,7 +1503,7 @@ focus_tree = {
 			focus = GER_plan_sealion
 		}
 		relative_position_id = GER_plan_sealion
-		x = 2
+		x = 1
 		y = 1
 			ai_will_do = {
 					factor = 5
@@ -1560,8 +1560,8 @@ focus_tree = {
 			focus = GER_train_paratroopers
 			focus = GER_train_marines
 		}
-		x = 18
-		y = 5
+		x = 17
+		y = 7
 			ai_will_do = {
 					factor = 2.5
 					modifier = {
@@ -1661,7 +1661,7 @@ focus_tree = {
 		prerequisite = {
 			focus = GER_prepare_france_invasion
 		}
-		x = 21
+		x = 20
 		y = 2
 			ai_will_do = {
 					factor = 10
