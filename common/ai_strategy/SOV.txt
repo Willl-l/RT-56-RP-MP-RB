@@ -426,6 +426,18 @@ SOV_bad_kid_TAN = {
 	
 }
 
+SOV_dont_protect_poland = { #no guarantee on poland
+	
+	ai_strategy = {
+		type = protect
+		id = 'POL'
+		value = -9999999999999999999999999
+	}
+}
+
+
+
+
 SOV_unit_production = {
 	enable = {
 		original_tag = SOV
