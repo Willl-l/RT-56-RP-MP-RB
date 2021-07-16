@@ -5401,10 +5401,7 @@ focus_tree = {
 			focus = GER_romania_war
 			focus = GER_second_vienna_award
 		}
-		mutually_exclusive = {
-			focus = GER_turkey_war
-		}
-		x = 40
+		x = 41
 		y = 6
 			ai_will_do = {
 					factor = 10
@@ -5437,6 +5434,7 @@ focus_tree = {
 						}						
 					}
 					TUR = {
+							give_miliary_access = GER
 							add_opinion_modifier = {
 									target = GER
 									modifier = ger_naval_intimidation_focus
@@ -5488,66 +5486,11 @@ focus_tree = {
 
 	}
 	focus = {
-		id = GER_turkey_war
-		icon = GFX_goal_italy_attack_turkey
-		cost = 10.00
-		prerequisite = {
-			focus = GER_romania_friend
-			focus = GER_romania_war
-			focus = GER_second_vienna_award
-		}
-		mutually_exclusive = {
-			focus = GER_turkey_friend
-		}
-		x = 42
-		y = 6
-			ai_will_do = {
-					factor = 10
-					modifier = {
-							factor = 0.25
-							has_war = yes
-						}
-				}
-			available = {
-					r56_script_i_am_sane = yes
-					TUR = {
-							r56_script_target_is_sane = yes
-						}
-				}
-			bypass = {
-					TUR = {
-							r56_script_standard_bypass = yes
-						}
-				}
-			completion_reward = {
-				if = {
-					limit = { has_dlc = "La Resistance" }
-					create_operative_leader = {
-						name = "Eleysa Bazna"
-						GFX = GFX_portrait_eleysa_bazna
-						traits = { operative_infiltrator }
-						bypass_recruitment = no
-						available_to_spy_master = yes
-						nationalities = { TUR ALB YUG KOS }
-					}						
-				}				
-					create_wargoal = {
-							type = take_state_focus
-							target = TUR
-							expire = 0
-							generator = { 49 }
-						}
-				}
-				search_filters = { FOCUS_FILTER_ANNEXATION }
-
-	}
-	focus = {
 		id = GER_iraq_friend
 		icon = GFX_goal_GER_befriend_iraq
 		cost = 10.00
 		prerequisite = {
 			focus = GER_turkey_friend
-			focus = GER_turkey_war
 		}
 		mutually_exclusive = {
 			focus = GER_iraq_war
@@ -5630,7 +5573,6 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = GER_turkey_friend
-			focus = GER_turkey_war
 		}
 		mutually_exclusive = {
 			focus = GER_iraq_friend
@@ -7439,126 +7381,6 @@ focus_tree = {
 				}
 			}			
 		}
-	}
-	focus = {
-		id = GER_iran_friend
-		icon = GFX_goal_PER_agreement
-		cost = 10.00
-		prerequisite = {
-			focus = GER_iraq_friend
-			focus = GER_iraq_war
-		}
-		mutually_exclusive = {
-			focus = GER_iran_war
-		}
-		x = 40
-		y = 8
-			ai_will_do = {
-					factor = 10
-				}
-			available = {
-					NOT = {
-							has_war_with = PER
-						}
-				}
-			bypass = {
-					OR = {
-							PER = {
-									is_in_faction_with = GER
-								}
-							NOT = {
-									country_exists = PER
-								}
-						}
-				}
-			completion_reward = {
-					PER = {
-							add_opinion_modifier = {
-									target = GER
-									modifier = ger_naval_intimidation_focus
-								}
-							if = {
-									limit = {
-											GER = {
-													has_government = fascism
-												}
-										}
-									add_timed_idea = {
-											idea = fascist_influence
-											days = 1035
-										}
-								}
-							if = {
-									limit = {
-											GER = {
-													has_government = communism
-												}
-										}
-									add_timed_idea = {
-											idea = communist_influence
-											days = 1035
-										}
-								}
-							if = {
-									limit = {
-											GER = {
-													has_government = democratic
-												}
-										}
-									add_timed_idea = {
-											idea = democratic_influence
-											days = 1035
-										}
-								}
-							country_event = {
-									id = generic.1
-								}
-							if = {
-									limit = {
-											has_idea = neutrality_idea
-										}
-									remove_ideas = neutrality_idea
-								}
-						}
-				}
-
-	}
-	focus = {
-		id = GER_iran_war
-		icon = GFX_goal_ENG_attack_iran
-		cost = 10.00
-		prerequisite = {
-			focus = GER_iraq_friend
-			focus = GER_iraq_war
-		}
-		mutually_exclusive = {
-			focus = GER_iran_friend
-		}
-		x = 42
-		y = 8
-			ai_will_do = {
-					factor = 10
-				}
-			available = {
-					r56_script_i_am_sane = yes
-					PER = {
-							r56_script_target_is_sane = yes
-						}
-				}
-			bypass = {
-					PER = {
-							r56_script_standard_bypass = yes
-						}
-				}
-			completion_reward = {
-					create_wargoal = {
-							type = annex_everything
-							target = PER
-							expire = 0
-						}
-				}
-				search_filters = { FOCUS_FILTER_ANNEXATION }
-
 	}
 	focus = {
 		id = GER_progress_cult
