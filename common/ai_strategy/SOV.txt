@@ -431,7 +431,7 @@ SOV_dont_protect_poland = { #no guarantee on poland
 	ai_strategy = {
 		type = protect
 		id = 'POL'
-		value = -9999999999999999999999999
+		value = -9999
 	}
 }
 
